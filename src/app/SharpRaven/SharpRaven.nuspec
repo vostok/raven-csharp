@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <id>SharpRaven</id>
+    <id>Vostok-SharpRaven</id>
     <version>$version$</version>
     <title>.NET client for Sentry (getsentry.com)</title>
     <authors>Sentry Team</authors>
     <owners>jsk, asbjornu, gmaclellan</owners>
     <licenseUrl>https://github.com/getsentry/raven-csharp/blob/master/LICENSE</licenseUrl>
-    <projectUrl>https://github.com/getsentry/raven-csharp</projectUrl>
+    <projectUrl>https://github.com/vostok/raven-csharp</projectUrl>
     <iconUrl>https://raw.githubusercontent.com/getsentry/raven-csharp/master/sentry-icon.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Raven is a C# client for Sentry (getsentry.com and github.com/getsentry/sentry)</description>
