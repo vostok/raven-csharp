@@ -32,7 +32,7 @@ using System.Reflection;
 using System.Runtime.InteropServices;
 
 [assembly : AssemblyDescription("SharpRaven is a C# client for Sentry https://www.getsentry.com")]
-[assembly : AssemblyCompany("Sentry")]
-[assembly : AssemblyProduct("SharpRaven")]
+[assembly : AssemblyCompany("Vostok")]
+[assembly : AssemblyProduct("VostokSharpRaven")]
 [assembly : AssemblyCopyright("Copyright © Sentry")]
 [assembly : ComVisible(false)]
