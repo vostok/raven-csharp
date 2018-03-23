@@ -41,7 +41,9 @@ install:
       }
   - dotnet restore ./src
 configuration: Release
-after_build:
+build_script:
+  - cd %appveyor_build_folder%\src
+  - dotnet build
   - ps: |
       $prbranch = "$env:APPVEYOR_PULL_REQUEST_HEAD_REPO_BRANCH"
       if ($prbranch -eq "")
@@ -57,3 +59,7 @@ after_build:
           }          
         }
       }
+deploy:
+  - provider: Environment
+    name: FullNuget
+    artifact: /.*\.nupkg/
