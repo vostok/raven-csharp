@@ -63,3 +63,4 @@ deploy:
   - provider: Environment
     name: FullNuget
     artifact: /.*\.nupkg/
+test: off
