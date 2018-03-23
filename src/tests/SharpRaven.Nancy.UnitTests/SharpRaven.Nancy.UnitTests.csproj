@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>net45;net40</TargetFrameworks>
+    <TargetFrameworks>net471</TargetFrameworks>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <Configurations>Debug;Release;Debug-net35;Release-net35;Debug-net40;Release-net40;Debug-net45;Release-net45;Release-netstandard2.0;Debug-netstandard2.0;Release-netstandard2.0</Configurations>
   </PropertyGroup>
@@ -9,7 +9,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\app\SharpRaven\SharpRaven.csproj" />
-    <ProjectReference Include="..\..\app\SharpRaven.Nancy\SharpRaven.Nancy.csproj" />
   </ItemGroup>
 
   <ItemGroup Condition="'$(TargetFramework)' == 'net40' or '$(TargetFramework)' == 'net45'">
@@ -39,5 +38,9 @@
     <None Update="log.html">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Service Include="{82a7f48d-3b50-4b1e-b82e-3ada8210c358}" />
   </ItemGroup>
 </Project>
